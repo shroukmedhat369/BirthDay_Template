@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <form id="challenge2-form">
+        <label for="q2">what planet is the second nearest to the Sun? </label><br>
+        <label for="mars">Mars</label>
+        <input type="radio" id="mars" name="q2" value="Mars">
+        <br>
+        <label for="jupiter">Jupiter</label>
+        <input type="radio" id="jupiter" name="q2" value="Jupiter">
+        <br>
+        <label for="venus">Venus</label>
+        <input type="radio" id="venus" name="q2" value="Venus">
+        <br>
+        <button type="submit">Submit</button>
+        <button onclick="window.history.back()">Back</button>
+    </form>
+    <div class="custom-alert" id="customAlert">
+        <div class="alert-text" id="alertText"></div>
+        <button onclick="closeAlert()">OK</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

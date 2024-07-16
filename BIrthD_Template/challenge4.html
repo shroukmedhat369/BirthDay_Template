@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 4 (Quiz)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <form id="quiz-form">
+        <label for="q1">Which element is the most abundant in the Earth's atmosphere?</label><br>
+        <input type="radio" id="q1a" name="q1" value="Oxygen">
+        <label for="q1a">Oxygen</label><br>
+        <input type="radio" id="q1b" name="q1" value="Carbon Dioxide">
+        <label for="q1b">Carbon Dioxide</label><br>
+        <input type="radio" id="q1c" name="q1" value="Nitrogen">
+        <label for="q1c">Nitrogen</label><br>
+        <button type="submit">Submit</button>
+        <button onclick="window.history.back()">Back</button>
+
+    </form>
+    <div class="custom-alert" id="customAlert">
+        <div class="alert-text" id="alertText"></div>
+        <button onclick="closeAlert()">OK</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

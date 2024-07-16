@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spot the Difference Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body> 
+    <div class="container spot">
+    <h1>Spot the Difference</h1>
+    <p>Select the correct image to proceed to the next challenge!</p>
+    <div class="image-options">
+        <label>
+            <input type="radio" name="difference" value="1">
+            <img src="./img/pic5.jpg" alt="your bestie pic">
+        </label>
+       
+        <label>
+            <input type="radio" name="difference" value="3">
+            <img src="./img/pic13.png" alt="no difference">
+        </label>
+        <label>
+            <input type="radio" name="difference" value="2">
+            <img src="./img/pic12.png" alt="bestie discriptive photo">
+        </label>
+    </div>
+    <div class="custom-alert" id="customAlert">
+        <div class="alert-text" id="alertText"></div>
+        <button onclick="closeAlert()">OK</button>
+    </div>
+    <button onclick="window.history.back()">Back</button>
+    <button id="submit-spot-difference">Submit</button>
+    
+</div>
+   
+</body>
+</html>

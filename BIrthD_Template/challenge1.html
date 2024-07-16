@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <form id="challenge1-form">
+        <label for="q1">What is the capital of France?</label><br>
+        <label for="london">london"</label>
+        <input type="radio" id="london" name="q1" value="London"> <br>
+
+        <label for="paris">paris</label>
+        <input type="radio" id="paris" name="q1" value="Paris"> <br>
+
+        <label for="rome">rome</label>
+        <input type="radio" id="rome" name="q1" value="Rome"> <br>
+
+        <button type="submit">Submit</button>
+        <button onclick="window.history.back()">Back</button>
+    </form>
+    
+
+    <div class="custom-alert" id="customAlert">
+        <div class="alert-text" id="alertText"></div>
+        <button onclick="closeAlert()">OK</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
